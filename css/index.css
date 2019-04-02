@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    
 }
 
 html, body {
@@ -69,7 +70,36 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+    
 }
+header{
+    display: flex;
+    width:100%;
+}
+header img{
+    margin-bottom: 20px;
+    margin-top:20px;
+}
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 620px;
+    margin-top: 40px;
+    font-size: 12px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+ 
+header nav a{
+    text-decoration:none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color:black;
+}
+
 
 .top-content {
     display: flex;
@@ -77,6 +107,7 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    margin-top: 20px;
 }
 
 .top-content .text-container {
@@ -111,6 +142,45 @@ p {
     align-items: center;
     justify-content: center;
 }
+/*Box Colors*/
+#box1{
+    background-color:teal;
+}
+#box2{
+    background-color:gold;
+}
+
+#box3{
+    background-color:cadetblue;
+}
+
+#box4{
+    background-color:coral;
+}
+
+#box5{
+    background-color:crimson;
+}
+
+#box6{
+    background-color:forestgreen;
+}
+
+#box7{
+    background-color:darkorchid;
+}
+
+#box8{
+    background-color:hotpink;
+}
+
+#box9{
+    background-color:indigo;
+}
+#box10{
+    background-color:dodgerblue;
+}
+
 
 .bottom-content {
     display: flex;
@@ -143,4 +213,112 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*About Page CSS*/
+
+.container-about-page{
+   
+    width: 800px;
+    margin: 0 auto;
+}
+.about-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 1.3;
+}
+.about-content .header-img{
+    margin: 20px 0;
+}
+.about-content h1{
+    margin: 10px 0;
+    font-size: 25px;
+    padding-left: 10px;
+}
+.about-content .about-text {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+    padding-left: 10px;
+}
+.about-content .text{
+    width: 380px;
+    padding: 10px;
+    border-bottom: 1px dashed black;
+    margin:20px 0;
+}
+.about-content .text-pic{
+    width: 370px;
+}
+button{
+    background: white;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px 40px;
+    margin-bottom:10px;
+}
+button:hover{
+    background: rgb(53, 35, 35);
+    color:whitesmoke;
+}
+section{
+    margin: 10px;
+}
+section h2 {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+section p {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+
+/*Contact.html page*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact {
+  border-radius: 5px;
+  background-color:whitesmoke;
+  padding: 20px;
+  width: 800px;
+  margin: 0 auto;
+  height: 800px;
+}
+h3{
+    font-size: 26px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+label{
+    display: block;
+    margin: 10px;
+    padding: 10px;
 }
